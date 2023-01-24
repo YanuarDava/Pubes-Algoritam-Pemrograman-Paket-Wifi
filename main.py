@@ -143,7 +143,7 @@ def read_data():
         print(f"No | Nama            | Nomor           | Mbps            | Tagihan     |")
         print("========================================================================")
         index = 1
-        # Content Di Tabel
+        # Konten Di Tabel
         for content in data:
             content = content.split(",")
             nama = content[0]
@@ -182,7 +182,7 @@ def sort_data():
 # Update Data
 def update_data():
     read_data()
-    pilih = int(input("Masukkan No Data Yang Ingin Di Update\t: "))
+    pilih = int(input("Masukkan Nomer Data Yang Ingin Di Update\t: "))
     pilih-=1
     with open("data.txt","r") as file:
         data = file.readlines()
@@ -267,4 +267,8 @@ while True:
                 case "3": update_data()
                 case "4": cancel_pesanan()
                 case "5": break
+        else:
+            print("P")
+        
+    
         
