@@ -13,7 +13,7 @@ TEMPLATE = {
 def menu():
     os.system("cls")
     print("Selamat Datang Di Program".center(60))
-    print("Pemabyaran/Daftar Wifi".center(59) + "\n")
+    print("Pembayaran/Daftar Wifi".center(59) + "\n")
     print("""
             ===================================
             | Nomer | Menu                    |
@@ -26,7 +26,7 @@ def menu():
 # Read Paket
 def read_produk():
     os.system("cls")
-    daftar_paket = glob.glob('paket wifi/*.txt')    
+    daftar_paket = glob.glob('List Paket/*.txt')    
     pjng_file = len(daftar_paket)
 
     # Tabel Atas
@@ -268,4 +268,3 @@ while True:
                 case "4": cancel_pesanan()
                 case "5": break
         
-
